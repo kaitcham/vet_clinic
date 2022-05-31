@@ -14,3 +14,7 @@ SET species = 'unspecified'
 SELECT * FROM animals
 ROLLBACK;
 SELECT * FROM animals
+BEGIN;
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon'
