@@ -12,3 +12,18 @@ CREATE TABLE animals (
 
 ALTER TABLE animals
 ADD species varchar(32);
+
+CREATE TABLE owners
+(
+    id bigint NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 ),
+    full_name text NOT NULL,
+    age integer,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE species
+(
+    id bigint NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 ),
+    name text,
+    PRIMARY KEY (id)
+);
