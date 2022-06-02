@@ -74,3 +74,5 @@ CREATE TABLE visits
     ON DELETE CASCADE,
     PRIMARY KEY (id)
 );
+
+ALTER TABLE visits ADD COLUMN visits_data date;
