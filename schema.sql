@@ -75,4 +75,4 @@ CREATE TABLE visits
     PRIMARY KEY (id)
 );
 
-ALTER TABLE visits ADD COLUMN visits_data date;
+ALTER TABLE visits ADD COLUMN visits_date date;
