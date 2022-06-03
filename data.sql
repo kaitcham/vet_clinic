@@ -121,6 +121,8 @@ INSERT INTO vets (name, age, date_of_graduation)
 values ('William Tatcher', 45, '2000-04-23'),('Maisy Smith', 26, '2009-01-17'),
 ('Stephanie Mendez', 64, '1981-05-04'),('Jack Harkness', 38, '2008-06-08');
 
+UPDATE vets SET date_of_graduation = '2019-01-17' WHERE name = 'Maisy Smith';
+
 INSERT INTO specializations(species_id, vets_id)
 values (1, 1),(2, 3),(1, 3),(2, 4);
 
